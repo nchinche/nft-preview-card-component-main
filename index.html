@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet"  href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+    
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  width: 350px;
+  height: 550px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px 0px hsl(217, 54%, 11%);
+  margin: 40px 0;
+
+}
+
+
+
+.container img{
+width: 320px;
+height: 300px;
+border-radius: 5px;
+}
+
+
+.container .result{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.detail span{
+  font-size: 13px;
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+
+.detail h2{
+  color: hsl(178, 100%, 50%);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.container h1{
+ color:  hsl(0, 0%, 100%);
+ font-size: 18px;
+}
+
+.img-log{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-log img{
+width: 30px;
+height: 30px;
+
+}
+
+.img-log h3{
+  color: hsl(178, 100%, 50%);
+  font-size: 13px;
+}
+
+
+.detail{
+  margin: 15px 0;
+  line-height: 20px;
+}
+
+.detail p{
+  margin: 20px 0;
+  font-size: 18px;
+  color:  hsl(178, 100%, 50%);
+}
+
+hr{
+  margin: 20px 0;
+  border: 0.2px solid hsl(178, 100%, 50%);
+
+}
+
+
+.img-log a{
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+
+
+    .attribution h5{
+     font-size: 15px;
+      text-align: center; 
+    color: hsl(0, 0%, 100%); 
+      }
+
+
+    .attribution a {
+      color: rgb(176, 71, 71);
+     }
+    }
+
+    @media (max-width: 375px) {
+       
+      .container{
+  width: 320px;
+  height: 550px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px 0px hsl(217, 54%, 11%);
+  margin: 40px 0;
+
+}
+
+
+
+.container img{
+width: 290px;
+height: 300px;
+border-radius: 5px;
+}
+
+
+
+.img-log{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.img-log img{
+width: 25px;
+height: 25px;
+
+}
+
+.img-log h3{
+  color: hsl(178, 100%, 50%);
+  font-size: 13px;
+}
+
+
+
+    .attribution h5{
+        font-size: 11px;
+         text-align: center; 
+       
+       color: hsl(0, 0%, 100%); 
+         }
+   
+   
+       .attribution a {
+         color: rgb(176, 71, 71);
+        } 
+    }
+
+</style>
+
+
+<body>
+
+  <div class="container">
+
+    <img src="images/image-equilibrium.jpg" alt="">
+
+<div class="detail">
+  <h1>Equilibrium #3429</h1>
+
+  <p>Our Equilibrium collection promotes balance and calm.</p>
+
+  <div class="result">
+  <h2><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>0.041 ETH</h2>
+  <h2><span><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>3 days left</span></h2>
+</div>
+
+<hr>
+
+  <div class="img-log">
+  <img src="images/image-avatar.png" alt="">
+  <h3>Creation of <a href="#">Jules Wyvern</a></h3>
+</div>
+</div>
+</div>
+
+  <div class="attribution">
+    <h5>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/nchinche">Your Nchinche Pascal</a></h5>
+  </div>
+</body>
+</html>
